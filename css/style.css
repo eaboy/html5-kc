@@ -5,3 +5,36 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.clearfix:after {
+    visibility: hidden; 
+}
+
+.navbar {
+    background-color: #f7f7f7;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.navbar > .navbar-list {
+    list-style-type: none;
+    margin: 0;
+    float: right;
+}
+
+.navbar > .navbar-list > .navbar-item {
+    display: inline-block;
+}
+
+.navbar > .navbar-list > .navbar-item a {
+    padding: 20px;
+    text-decoration: none;
+    color: rgba(0,0,0,0.91);
+    display: inline-block;
+}
+
+.navbar > .navbar-list > .navbar-item.active a {
+    color: #f7f7f7;
+    background-color: #a4a4a4;
+}
