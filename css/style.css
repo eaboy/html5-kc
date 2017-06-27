@@ -54,13 +54,13 @@ body {
 
 .header > .title {
     position: absolute;
-    top: 75%;
+    top: 65%;
     z-index: 1;
     width: 100%;
     text-align: center;
     color: white;
     font-family: batman;
-    font-size: 40px;
+    font-size: 100px;
 }
 
 .title-cite {
