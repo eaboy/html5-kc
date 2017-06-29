@@ -140,10 +140,63 @@ body {
 }
 
 .footer {
-    background-color: rgba (0,0,0,0.92);
+    background-color: rgba(0, 0, 0, 0.92);
     color: var(--main-text-color);
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+#googleMap {
+    height: 400px;
+}
+
+.form {
+    padding: 0 20px;
+}
+
+.form .form-row {
+    padding: 10px;
+}
+
+input {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input [type=button], input[type=submit], button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+thead > tr {
+    background-color: #F5F5F5;
+}
+
+th {
+    height: 50px;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody > tr:hover {
+    background-color: #dedede;
+}
+
