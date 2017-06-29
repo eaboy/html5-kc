@@ -6,8 +6,13 @@ body {
     padding: 0;
 }
 
+
 .clearfix:after {
-    visibility: hidden; 
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 @font-face {
@@ -72,4 +77,14 @@ body {
     font-size: 28px;
     color: white;
     font-family: batman;
+}
+
+.about-me > .batman-video {
+    float: left;
+    max-width: 50%;
+}
+
+.about-me > .batman-info {
+    float: right;
+    max-width: 50%;
 }
