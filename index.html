@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
 
         <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <link rel="stylesheet" href="./css/grid.css" type="text/css">
 
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -39,8 +40,8 @@
                 </li>
             </ul>
         </nav>
-        <main>
-            <section class="about-me clearfix">
+        <main class="container">
+            <section class="about-me clearfix section-container">
                 <div class="batman-video">
                     <video controls width="550" height="300">
                         <source src="./video/batman.mp4" type="video/mp4"> 
@@ -53,9 +54,9 @@
                 </div>
             </section>
 
-            <section class="team">
-                <div>
-                    <div>
+            <section class="team section-reverse section-container">
+                <div class="row container clearfix">
+                    <div class="col-4">
                         <article class="team-member">
                             <header>
                                 <h3>
@@ -71,7 +72,7 @@
                             <p class="bio">"¿Por qué caemos,? Para que aprendamos a levantarnos" - <cite>Batman Begins</cite></p>
                         </article>
                     </div>
-                    <div>
+                    <div class="col-4">
                         <article class="team-member">
                             <header>
                                 <h3>
@@ -85,7 +86,7 @@
                             <p class="bio">"O mueres como un héroe, o vives lo suficiente para convertirte en un villano" - <cite>Batman El caballero oscuro </cite></p>
                         </article>
                     </div>
-                    <div>
+                    <div class="col-4">
                         <article class="team-member">
                             <header>
                                 <h3>
@@ -104,8 +105,8 @@
                 </div>
             </section>
 
-            <section class="transport">
-                <div>
+            <section class="transport section-container">
+                <div class="row">
                     <div class="transport-item">
                         <figure>
                             <img class="transport-img" src="./images/car.jpg" alt="Moto Batman">
