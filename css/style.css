@@ -88,6 +88,9 @@ body {
     color: white;
     font-family: batman;
     font-size: 100px;
+    visibility: hidden;
+    animation: titleAnimation 2s forwards;
+    animation-delay: 0.5s;
 }
 
 .title-cite {
@@ -99,6 +102,9 @@ body {
     font-size: 28px;
     color: white;
     font-family: batman;
+    opacity: 0;
+    animation:  subTitleAnimation 3s forwards;
+    animation-delay: 0.5s;
 }
 
 .section-container {
@@ -233,3 +239,27 @@ tbody > tr:hover {
     background-color: #dedede;
 }
 
+@keyframes titleAnimation {
+    0% {
+        font-size: 200px;
+    }
+    50% {
+        font-size: 180px;
+    }
+    100% {
+        font-size: 100px;
+        visibility: visible;
+    }
+}
+
+@keyframes subTitleAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
