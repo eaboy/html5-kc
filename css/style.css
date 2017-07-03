@@ -51,6 +51,7 @@ body {
     text-decoration: none;
     color: rgba(0,0,0,0.91);
     display: inline-block;
+    transition: all 2s linear;
 }
 
 .navbar > .navbar-list > .navbar-item a:hover {
@@ -69,6 +70,11 @@ body {
     background-repeat: none;
     background-position: center center;
     height: 100vh;
+    transition: background-size 0.5s;
+}
+
+.header > .title-img:hover {
+    background-size: 115% 115%;
 }
 
 .header > .title {
@@ -116,10 +122,37 @@ body {
     max-width: 50%;
 }
 
-.team-member-photo > img {
+.team-member-photo img {
     height: 300px;
     max-width: 100%;
     border-radius: 50%;
+}
+
+.flip {
+    height: 305px;
+    position: relative;
+}
+
+.flip:hover .front {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+.flip:hover .back {
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+}
+
+.flip-img {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 1s;
+}
+
+.back {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
 }
 
 .transport-img {
