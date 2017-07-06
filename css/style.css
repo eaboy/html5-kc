@@ -78,7 +78,7 @@ body {
     background-size: 115% 115%;
 }
 
-.header > .title {
+.header > .title-img > .title {
     position: absolute;
     left: 0;
     top: 65%;
