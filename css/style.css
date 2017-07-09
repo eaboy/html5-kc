@@ -217,6 +217,10 @@ input [type=button], input[type=submit], button {
     border-radius: 0;
 }
 
+button[disabled] {
+    opacity: 0.5;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;

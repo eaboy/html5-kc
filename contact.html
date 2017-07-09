@@ -5,12 +5,12 @@
 
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <link rel="stylesheet" href="./css/grid.css" type="text/css">
+        <link rel="stylesheet" href="./css/font-awesome.css" type="text/css">
 
-        <script src=“http://maps.googleapis.com/maps/api/js?key=AIzaSyA-jpiiZm0kg4wbYwPvUtNZvyLbiNcz6p8“></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA-jpiiZm0kg4wbYwPvUtNZvyLbiNcz6p8"></script>
 
         <title>Mi Primera Web</title>
         
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA-jpiiZm0kg4wbYwPvUtNZvyLbiNcz6p8"></script>
 		<script>
 			function initialize() {
 				var myLatLng = {lat: 42.762480, lng: -83.283406};
@@ -59,7 +59,7 @@
                     <div class="col-6"><div id="googleMap"></div></div>
                     <div class="col-6">
                         <div class="form">
-                            <form action="" name="contact" method="get">
+                            <form name="contacto" method="get" novalidate>
                                 <div class="form-row">
                                     <label for="nombre">Nombre:</label>
                                     <input id="nombre" type="text" name="nombre" placeholder="Nombre" required>
@@ -68,8 +68,8 @@
                                     <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos" required>
                                 </div>
                                 <div class="form-row">
-                                    <label for="email"></label>
-                                    <input type="email" name="email" id="email" placeholder="name@company.com" pattern=“[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+”>
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
                                 </div>
 
                                 <div class="form-row">
@@ -84,7 +84,7 @@
                                 
                                 <div class="form-row">
                                     <label for="ejercito">Tamaño del ejército:</label>
-                                    <input type="number" name="ejercito" min="10" required>
+                                    <input type="number" id="ejercito" name="ejercito" min="10" required>
                                 </div>
                                 
                                 <div class="form-row">
@@ -93,7 +93,7 @@
                                 </div>
                                 
                                 <div class="form-row">
-                                    <input type="submit" value="Enviar">
+                                    <button type="submit" id="enviar">Enviar</button>
                                 </div>
                             </form>
                         </div>
@@ -133,4 +133,6 @@
             Eduardo Aboy &copy; 2017 KeepCoding
         </footer>
     </body>
+    <script src="./js/notifications.js"></script>
+    <script src="./js/form.js"></script>
 </html>
